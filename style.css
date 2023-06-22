@@ -1,3 +1,14 @@
+body{
+  background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+    url('https://scontent.fdac24-3.fna.fbcdn.net/v/t39.30808-6/241336609_10226051949746606_9178838447976712066_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8631f5&_nc_eui2=AeGz8Vb6rbgzESE2gv88ZbCWujVfqTbNnRS6NV-pNs2dFPdg1Mlgw3iWSA32Vkk0gxLzF8eBNhsdGdrNsu22JhfL&_nc_ohc=L0NlHqVMSYEAX9sBA6R&_nc_ht=scontent.fdac24-3.fna&oh=00_AfAfGX0sOPngBR5CidDFS_6OnN0JgZgLzgwmmsmN8uZo3A&oe=6497F5C6');
+    width: 80%;
+    height: 400px;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+}
+
 button{
 
   background-color: #1B75BB; 
