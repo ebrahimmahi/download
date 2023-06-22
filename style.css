@@ -1,51 +1,90 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300";
+
+body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	font-family: "Open Sans Condensed", sans-serif;
+	align-items: center;
+	background-color: #ff6766;
+	font-size: large;
+}
+
+a {
+	text-decoration: none;
+}
+.head {
+	margin: 20px 0;
+	color: #fff;
+}
+
+.btn {
+	line-height: 50px;
+	height: 50px;
+	text-align: center;
+	width: 250px;
+	cursor: pointer;
+	margin: 20px;
+	padding: 10px;
+}
+
+.btn-two {
+	color: #fff;
+	transition: all 0.5s;
+	position: relative;
+	padding: 10px;
+}
+.btn-two span {
+	z-index: 2;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.btn-two::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.5s;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.btn-two::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.5s;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.btn-two:hover::before {
+	transform: rotate(-45deg);
+	background-color: rgba(255, 255, 255, 0);
+}
+.btn-two:hover::after {
+	transform: rotate(45deg);
+	background-color: rgba(255, 255, 255, 0);
+}
+/* 
 body{
-  background-image:
-    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
-    url('https://scontent.fdac24-3.fna.fbcdn.net/v/t39.30808-6/241336609_10226051949746606_9178838447976712066_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8631f5&_nc_eui2=AeGz8Vb6rbgzESE2gv88ZbCWujVfqTbNnRS6NV-pNs2dFPdg1Mlgw3iWSA32Vkk0gxLzF8eBNhsdGdrNsu22JhfL&_nc_ohc=L0NlHqVMSYEAX9sBA6R&_nc_ht=scontent.fdac24-3.fna&oh=00_AfAfGX0sOPngBR5CidDFS_6OnN0JgZgLzgwmmsmN8uZo3A&oe=6497F5C6');
-    width: 80%;
-    height: 400px;
-    background-size: cover;
-    color: white;
-    padding: 20px;
-}
-
-button{
-
-  background-color: #1B75BB; 
-
-  border: none;
-
-  color: #F03F37;
-
-  padding: 20px;
-
-  text-align: center;
-
-  text-decoration: none;
-
-  display: inline-block;
-
-  font-size: 100px;
-
-  margin: 40px;
-
-  cursor: pointer;
-
-  border-radius: 5px;
-
-}
-
-.button-container{
-
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  flex-wrap: wrap;
-
-  margin-top: 50px;
-
-}
-
+    background-image:
+      linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+      url('https://scontent.fdac24-3.fna.fbcdn.net/v/t39.30808-6/241336609_10226051949746606_9178838447976712066_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8631f5&_nc_eui2=AeGz8Vb6rbgzESE2gv88ZbCWujVfqTbNnRS6NV-pNs2dFPdg1Mlgw3iWSA32Vkk0gxLzF8eBNhsdGdrNsu22JhfL&_nc_ohc=L0NlHqVMSYEAX9sBA6R&_nc_ht=scontent.fdac24-3.fna&oh=00_AfAfGX0sOPngBR5CidDFS_6OnN0JgZgLzgwmmsmN8uZo3A&oe=6497F5C6');
+      width: 80%;
+      height: 400px;
+      background-size: cover;
+      color: white;
+      padding: 20px;
+  } */
